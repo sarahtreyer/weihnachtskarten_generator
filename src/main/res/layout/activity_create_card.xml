@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateCardActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="ScrollViewCount">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="#1B472D"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF3838"
+                android:drawableLeft="@drawable/arrow_back"
+                android:text=" "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/createCardTitel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="Karte gestalten"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/created_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="20dp"/>
+
+            <TableRow
+                android:id="@+id/tableRowTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/titelTextColor"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:text="Textfarbe"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/preview_selected_color_text"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="10sp"
+                    android:background="@android:color/holo_red_dark" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowBackgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/titelHintergrundColor"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:text="Hintergrundfarbe"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/preview_selected_color_background"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/black" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/titelText"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="Text"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sarah"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="textCapSentences|textAutoCorrect" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowOverlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/titelOverlay"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="Overlay"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/overlayDropdown"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown" />
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/saveInGalerie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:backgroundTint="#FF3838"
+                android:text="in Galerie speichern" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

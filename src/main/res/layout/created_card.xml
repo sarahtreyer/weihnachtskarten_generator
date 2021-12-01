@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="250dp">
+<LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="250dp"
+    android:orientation="horizontal"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/cardBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00BCD4">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mainbackground"/>
+
+            <ImageView
+                android:id="@+id/overlayPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/overlay_1" />
+
+            <TextView
+                android:id="@+id/cardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+                android:text="Froehliche Weihnachten von Sarah!"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
